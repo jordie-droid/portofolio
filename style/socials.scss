@@ -1,0 +1,19 @@
+.main__social-media {
+  align-items: center;
+  background-color: $secondaryColor;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 0 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 50px;
+  img {
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+  }
+}

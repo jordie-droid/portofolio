@@ -251,4 +251,4 @@ a {
   background: linear-gradient(to bottom, $secondaryColor, $primaryColor);
 }
 
-@import "header.scss";
+@import "header.scss", "socials.scss";

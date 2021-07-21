@@ -274,7 +274,7 @@ header .header__menu .list__item {
 header .header__menu .list__item .item__link {
   color: #ffffff;
   font-family: "roboto";
-  font-size: 1.07rem;
+  font-size: 1.15rem;
   font-weight: 400;
   position: relative;
 }
@@ -307,6 +307,25 @@ header .header__hamburger img {
   .header__hamburger {
     display: inherit !important;
   }
+}
+.main__social-media {
+  align-items: center;
+  background-color: #d43335;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 0 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 50px;
+}
+.main__social-media img {
+  height: 30px;
+  margin: 10px;
+  width: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
