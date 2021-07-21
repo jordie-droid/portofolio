@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "carosello";
+  src: url(/font/Carosello_Font/Carosello/Carosello-Regular.otf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(/font/roboto/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 20px;
+}
+
+.m-3 {
+  margin: 30px;
+}
+
+.m-4 {
+  margin: 40px;
+}
+
+.m-5 {
+  margin: 50px;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
+
+.ml-2 {
+  margin-left: 20px;
+}
+
+.ml-3 {
+  margin-left: 30px;
+}
+
+.ml-4 {
+  margin-left: 40px;
+}
+
+.ml-5 {
+  margin-left: 50px;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.mr-3 {
+  margin-right: 30px;
+}
+
+.mr-4 {
+  margin-right: 40px;
+}
+
+.mr-5 {
+  margin-right: 50px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.p-4 {
+  padding: 40px;
+}
+
+.p-5 {
+  padding: 50px;
+}
+
+.pt-1 {
+  padding-top: 10px;
+}
+
+.pt-2 {
+  padding-top: 20px;
+}
+
+.pt-3 {
+  padding-top: 30px;
+}
+
+.pt-4 {
+  padding-top: 40px;
+}
+
+.pt-5 {
+  padding-top: 50px;
+}
+
+.pb-1 {
+  padding-bottom: 10px;
+}
+
+.pb-2 {
+  padding-bottom: 20px;
+}
+
+.pb-3 {
+  padding-bottom: 30px;
+}
+
+.pb-4 {
+  padding-bottom: 40px;
+}
+
+.pb-5 {
+  padding-bottom: 50px;
+}
+
+.pl-1 {
+  padding-left: 10px;
+}
+
+.pl-2 {
+  padding-left: 20px;
+}
+
+.pl-3 {
+  padding-left: 30px;
+}
+
+.pl-4 {
+  padding-left: 40px;
+}
+
+.pl-5 {
+  padding-left: 50px;
+}
+
+.pr-1 {
+  padding-right: 10px;
+}
+
+.pr-2 {
+  padding-right: 20px;
+}
+
+.pr-3 {
+  padding-right: 30px;
+}
+
+.pr-4 {
+  padding-right: 40px;
+}
+
+.pr-5 {
+  padding-right: 50px;
+}
+
+.active {
+  color: black !important;
+}
+
+.hide-menu {
+  animation: animout 1s ease-out;
+  transition: 1s;
+  visibility: hidden !important;
+}
+
+.show-menu {
+  animation: animin 1s ease-in;
+  visibility: visible !important;
+}
+
+@keyframes animin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.linear-gradient {
+  background: linear-gradient(to bottom, #d43335, #33d4d1);
+}
+
+header {
+  align-items: center;
+  background-color: #d43335;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  width: 100%;
+}
+header .header__logo a {
+  color: #ffffff;
+  font-family: "carosello";
+  font-size: 2rem;
+}
+header .header__menu {
+  display: flex;
+  justify-content: space-around;
+}
+header .header__menu .list__item {
+  list-style: none;
+}
+header .header__menu .list__item .item__link {
+  color: #ffffff;
+  font-family: "roboto";
+  font-size: 1.07rem;
+  font-weight: 400;
+  position: relative;
+}
+header .header__menu .list__item .item__link:hover {
+  transition: 1s;
+  color: black;
+}
+header .header__hamburger {
+  display: none;
+}
+header .header__hamburger img {
+  cursor: pointer;
+  width: 40px;
+}
+
+@media screen and (max-width: 868px) {
+  .header__menu {
+    background-color: #d43335;
+    visibility: hidden;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 80px;
+    width: 70%;
+  }
+
+  .header__hamburger {
+    display: inherit !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
