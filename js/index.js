@@ -16,4 +16,13 @@ const handleSwitchMenu = (menu) => {
   }
 };
 
+const itemLinks = document.querySelectorAll(".item__link");
+function itemLinkAction() {
+  itemLinks.forEach((itemLink) => itemLink.classList.remove("active"));
+  this.classList.add("active");
+}
+
 hamburger.addEventListener("click", () => handleSwitchMenu(menu));
+itemLinks.forEach((itemLink) =>
+  itemLink.addEventListener("click", itemLinkAction)
+);
