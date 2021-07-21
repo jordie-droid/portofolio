@@ -1,4 +1,4 @@
-$primaryColor: #33d4d1;
+$primaryColor: #1465c3;
 $secondaryColor: #d43335;
 $defaultColor: #ffffff;
 
@@ -10,6 +10,11 @@ $defaultColor: #ffffff;
 @font-face {
   font-family: "roboto";
   src: url(/font/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url(/font/roboto/Roboto-Bold.ttf);
 }
 
 * {
@@ -248,7 +253,7 @@ a {
 }
 
 .linear-gradient {
-  background: linear-gradient(to bottom, $secondaryColor, $primaryColor);
+  background: linear-gradient(to bottom, $defaultColor, $secondaryColor);
 }
 
 @import "header.scss", "socials.scss", "banner.scss";

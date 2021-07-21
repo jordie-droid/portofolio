@@ -26,3 +26,6 @@ hamburger.addEventListener("click", () => handleSwitchMenu(menu));
 itemLinks.forEach((itemLink) =>
   itemLink.addEventListener("click", itemLinkAction)
 );
+
+const slogan = document.querySelector(".text__slogan");
+console.log(slogan);
