@@ -19,11 +19,25 @@
       font-family: "roboto-bold";
       font-size: 3rem;
       font-weight: bolder;
+      text-align: center;
     }
     .text__slogan {
       color: $secondaryColor;
       font-family: "roboto";
       font-size: 1.5rem;
+    }
+    a {
+      animation: bounce 1s infinite;
+      background-color: $secondaryColor;
+      border-radius: 20px;
+      color: $defaultColor;
+      display: block;
+      font-family: "roboto";
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-top: 20px;
+      padding: 15px;
+      position: relative;
     }
   }
 
@@ -76,16 +90,16 @@
       79.82051% 18.34936%
     );
     display: flex;
-    height: 320px;
     justify-content: center;
-    width: 320px;
+    min-height: 300px;
+    min-width: 300px;
 
     .image-container__content {
       background-color: $defaultColor;
       border-radius: 20px;
-      height: 300px;
+      height: 280px;
       overflow: hidden;
-      width: 300px;
+      width: 280px;
       clip-path: polygon(
         92.32051% 40%,
         93.79385% 43.1596%,
@@ -136,7 +150,58 @@
     }
   }
 }
+
 .separator {
   height: 53px;
   width: 100%;
+}
+
+@media screen and (max-width: 868px) {
+  .main__banner {
+    flex-direction: column-reverse;
+    .banner__text {
+      width: 70%;
+    }
+    .banner__image-container {
+      margin: 50px 0 -40px;
+    }
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .main__banner {
+    flex-direction: column-reverse;
+    .banner__text {
+      .text__graduation {
+        font-size: 2rem;
+      }
+      .text__slogan {
+        font-size: 1rem;
+      }
+      a {
+        font-size: 1rem;
+      }
+    }
+    .banner__image-container {
+      margin: 50px 0 -20px;
+      min-height: 250px;
+      min-width: 250px;
+      .image-container__content {
+        height: 230px;
+        width: 230px;
+        img {
+          margin: -50px 0 0 -60px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: -5px;
+  }
+  to {
+    top: 0;
+  }
 }

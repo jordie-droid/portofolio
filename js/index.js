@@ -8,7 +8,6 @@ const handleSwitchMenu = (menu) => {
     menu.classList.add("show-menu");
     menu.classList.remove("hide-menu");
     show = true;
-    console.dir(show);
   } else {
     menu.classList.add("hide-menu");
     menu.classList.remove("show-menu");
@@ -26,6 +25,3 @@ hamburger.addEventListener("click", () => handleSwitchMenu(menu));
 itemLinks.forEach((itemLink) =>
   itemLink.addEventListener("click", itemLinkAction)
 );
-
-const slogan = document.querySelector(".text__slogan");
-console.log(slogan);
