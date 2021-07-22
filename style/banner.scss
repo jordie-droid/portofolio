@@ -1,9 +1,8 @@
 .main__banner {
   align-items: center;
   background-color: $defaultColor;
-  border-bottom: solid 1px $secondaryColor;
   display: flex;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   margin-top: 80px;
   width: 100%;
@@ -22,11 +21,6 @@
       font-weight: bolder;
       text-align: center;
     }
-    .text__slogan {
-      color: $secondaryColor;
-      font-family: "roboto";
-      font-size: 1.5rem;
-    }
     a {
       animation: bounce 1s infinite;
       background-color: $secondaryColor;
@@ -39,6 +33,7 @@
       margin-top: 20px;
       padding: 15px;
       position: relative;
+      text-align: center;
     }
   }
 
@@ -163,10 +158,7 @@
     .banner__text {
       width: 70%;
       .text__graduation {
-        font-size: 2rem;
-      }
-      .text__slogan {
-        font-size: 1rem;
+        font-size: 1.85rem;
       }
       a {
         font-size: 1rem;
@@ -181,6 +173,11 @@
 @media screen and (max-width: 388px) {
   .main__banner {
     flex-direction: column-reverse;
+    .banner__text {
+      .text__graduation {
+        font-size: 1.5rem;
+      }
+    }
     .banner__image-container {
       margin: 50px 0 -20px;
       min-height: 250px;

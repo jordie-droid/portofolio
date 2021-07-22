@@ -1,26 +1,22 @@
 .main__about {
   align-items: center;
-  background-color: $defaultColor;
-  border-bottom: solid 1px $secondaryColor;
+  background-color: $primaryColor;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin-top: 80px;
   width: 100%;
   h2 {
+    border-left: 10px solid $secondaryColor;
     color: $secondaryColor;
     font-family: "roboto-bold";
     font-size: 3rem;
     font-weight: 900;
-    margin-top: -50px;
-    margin-bottom: 70px;
+    margin: 50px 0 80px;
   }
   .about__content {
     display: flex;
     .about__image-container {
       align-items: center;
       background-color: $secondaryColor;
-      border-radius: 20px;
       clip-path: polygon(
         92.32051% 40%,
         93.79385% 43.1596%,
@@ -128,12 +124,13 @@
     }
   }
   .about__text {
-    width: 60%;
+    width: 55%;
     height: 100%;
     p {
       color: black;
       font-family: "roboto";
-      font-size: 1rem;
+      font-size: 1.2rem;
+      line-height: 30px;
     }
   }
 }

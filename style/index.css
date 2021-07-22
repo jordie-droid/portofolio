@@ -258,7 +258,6 @@ a {
 header {
   align-items: center;
   background-color: #d43335;
-  box-shadow: 0 0 4px #d43335;
   display: flex;
   height: 80px;
   justify-content: space-around;
@@ -340,9 +339,8 @@ header .header__hamburger img {
 .main__banner {
   align-items: center;
   background-color: #ffffff;
-  border-bottom: solid 1px #d43335;
   display: flex;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   margin-top: 80px;
   width: 100%;
@@ -363,11 +361,6 @@ header .header__hamburger img {
   font-weight: bolder;
   text-align: center;
 }
-.main__banner .banner__text .text__slogan {
-  color: #d43335;
-  font-family: "roboto";
-  font-size: 1.5rem;
-}
 .main__banner .banner__text a {
   animation: bounce 1s infinite;
   background-color: #d43335;
@@ -380,6 +373,7 @@ header .header__hamburger img {
   margin-top: 20px;
   padding: 15px;
   position: relative;
+  text-align: center;
 }
 .main__banner .banner__image-container {
   align-items: center;
@@ -416,10 +410,7 @@ header .header__hamburger img {
     width: 70%;
   }
   .main__banner .banner__text .text__graduation {
-    font-size: 2rem;
-  }
-  .main__banner .banner__text .text__slogan {
-    font-size: 1rem;
+    font-size: 1.85rem;
   }
   .main__banner .banner__text a {
     font-size: 1rem;
@@ -431,6 +422,9 @@ header .header__hamburger img {
 @media screen and (max-width: 388px) {
   .main__banner {
     flex-direction: column-reverse;
+  }
+  .main__banner .banner__text .text__graduation {
+    font-size: 1.5rem;
   }
   .main__banner .banner__image-container {
     margin: 50px 0 -20px;
@@ -455,21 +449,18 @@ header .header__hamburger img {
 }
 .main__about {
   align-items: center;
-  background-color: #ffffff;
-  border-bottom: solid 1px #d43335;
+  background-color: #f7f2f2;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin-top: 80px;
   width: 100%;
 }
 .main__about h2 {
+  border-left: 10px solid #d43335;
   color: #d43335;
   font-family: "roboto-bold";
   font-size: 3rem;
   font-weight: 900;
-  margin-top: -50px;
-  margin-bottom: 70px;
+  margin: 50px 0 80px;
 }
 .main__about .about__content {
   display: flex;
@@ -477,7 +468,6 @@ header .header__hamburger img {
 .main__about .about__content .about__image-container {
   align-items: center;
   background-color: #d43335;
-  border-radius: 20px;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
   display: flex;
   justify-content: center;
@@ -497,13 +487,14 @@ header .header__hamburger img {
   margin: -20px 0 0 50px;
 }
 .main__about .about__text {
-  width: 60%;
+  width: 55%;
   height: 100%;
 }
 .main__about .about__text p {
   color: black;
   font-family: "roboto";
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

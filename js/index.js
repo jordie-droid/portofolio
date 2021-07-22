@@ -25,3 +25,4 @@ hamburger.addEventListener("click", () => handleSwitchMenu(menu));
 itemLinks.forEach((itemLink) =>
   itemLink.addEventListener("click", itemLinkAction)
 );
+
