@@ -252,7 +252,7 @@ a {
   }
 }
 .linear-gradient {
-  background: linear-gradient(to bottom, #ffffff, #d43335);
+  background: linear-gradient(to bottom, #d43335, #ffffff);
 }
 
 header {
@@ -329,6 +329,7 @@ header .header__hamburger img {
   transform: translateY(-50%);
   top: 55%;
   width: 50px;
+  z-index: 998;
 }
 .main__social-media img {
   height: 30px;
@@ -339,6 +340,7 @@ header .header__hamburger img {
 .main__banner {
   align-items: center;
   background-color: #ffffff;
+  border-bottom: solid 1px #d43335;
   display: flex;
   height: 80vh;
   justify-content: center;
@@ -402,7 +404,7 @@ header .header__hamburger img {
 }
 
 .separator {
-  height: 53px;
+  height: 20px;
   width: 100%;
 }
 
@@ -413,14 +415,6 @@ header .header__hamburger img {
   .main__banner .banner__text {
     width: 70%;
   }
-  .main__banner .banner__image-container {
-    margin: 50px 0 -40px;
-  }
-}
-@media screen and (max-width: 388px) {
-  .main__banner {
-    flex-direction: column-reverse;
-  }
   .main__banner .banner__text .text__graduation {
     font-size: 2rem;
   }
@@ -429,6 +423,14 @@ header .header__hamburger img {
   }
   .main__banner .banner__text a {
     font-size: 1rem;
+  }
+  .main__banner .banner__image-container {
+    margin: 50px 0 -40px;
+  }
+}
+@media screen and (max-width: 388px) {
+  .main__banner {
+    flex-direction: column-reverse;
   }
   .main__banner .banner__image-container {
     margin: 50px 0 -20px;
@@ -450,6 +452,58 @@ header .header__hamburger img {
   to {
     top: 0;
   }
+}
+.main__about {
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: solid 1px #d43335;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 80px;
+  width: 100%;
+}
+.main__about h2 {
+  color: #d43335;
+  font-family: "roboto-bold";
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: -50px;
+  margin-bottom: 70px;
+}
+.main__about .about__content {
+  display: flex;
+}
+.main__about .about__content .about__image-container {
+  align-items: center;
+  background-color: #d43335;
+  border-radius: 20px;
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  min-height: 500px;
+  min-width: 500px;
+}
+.main__about .about__content .about__image-container .image-container__content {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 480px;
+  overflow: hidden;
+  width: 480px;
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+}
+.main__about .about__content .about__image-container .image-container__content img {
+  margin: -20px 0 0 50px;
+}
+.main__about .about__text {
+  width: 60%;
+  height: 100%;
+}
+.main__about .about__text p {
+  color: black;
+  font-family: "roboto";
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

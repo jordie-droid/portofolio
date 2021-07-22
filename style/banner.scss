@@ -1,6 +1,7 @@
 .main__banner {
   align-items: center;
   background-color: $defaultColor;
+  border-bottom: solid 1px $secondaryColor;
   display: flex;
   height: 80vh;
   justify-content: center;
@@ -152,7 +153,7 @@
 }
 
 .separator {
-  height: 53px;
+  height: 20px;
   width: 100%;
 }
 
@@ -161,17 +162,6 @@
     flex-direction: column-reverse;
     .banner__text {
       width: 70%;
-    }
-    .banner__image-container {
-      margin: 50px 0 -40px;
-    }
-  }
-}
-
-@media screen and (max-width: 388px) {
-  .main__banner {
-    flex-direction: column-reverse;
-    .banner__text {
       .text__graduation {
         font-size: 2rem;
       }
@@ -182,6 +172,15 @@
         font-size: 1rem;
       }
     }
+    .banner__image-container {
+      margin: 50px 0 -40px;
+    }
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .main__banner {
+    flex-direction: column-reverse;
     .banner__image-container {
       margin: 50px 0 -20px;
       min-height: 250px;

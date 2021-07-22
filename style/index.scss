@@ -253,7 +253,7 @@ a {
 }
 
 .linear-gradient {
-  background: linear-gradient(to bottom, $defaultColor, $secondaryColor);
+  background: linear-gradient(to bottom, $secondaryColor, $defaultColor);
 }
 
-@import "header.scss", "socials.scss", "banner.scss";
+@import "header.scss", "socials.scss", "banner.scss", "about.scss";
