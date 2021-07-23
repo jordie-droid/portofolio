@@ -237,27 +237,28 @@ a {
 
 @keyframes animin {
   from {
-    opacity: 0;
+    right: -300px;
   }
   to {
-    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes animout {
   from {
-    opacity: 1;
+    right: 0;
   }
   to {
-    opacity: 0;
+    transform: translateX(300px);
   }
 }
 .linear-gradient {
-  background: linear-gradient(to bottom, #d43335, #ffffff);
+  background: linear-gradient(to bottom, #ffffff, #db272113);
 }
 
 header {
   align-items: center;
-  background-color: #d43335;
+  background-color: #db2821;
+  box-shadow: 0 0 4px #000000;
   display: flex;
   height: 80px;
   justify-content: space-around;
@@ -299,11 +300,11 @@ header .header__hamburger img {
 
 @media screen and (max-width: 868px) {
   .header__menu {
-    background-color: #d43335;
+    background-color: #db2821;
     visibility: hidden;
     flex-direction: column;
-    height: 100vh;
-    overflow: auto;
+    height: 92vh;
+    overflow: hidden;
     position: absolute;
     right: 0;
     text-align: center;
@@ -317,9 +318,9 @@ header .header__hamburger img {
 }
 .main__social-media {
   align-items: center;
-  background-color: #d43335;
+  background-color: #db2821;
   border-radius: 0 5px 5px 0;
-  box-shadow: 0 0 4px black;
+  box-shadow: 0 0 4px #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,7 +356,7 @@ header .header__hamburger img {
   width: 50%;
 }
 .main__banner .banner__text .text__graduation {
-  color: #d43335;
+  color: #db2821;
   font-family: "roboto-bold";
   font-size: 3rem;
   font-weight: bolder;
@@ -363,7 +364,7 @@ header .header__hamburger img {
 }
 .main__banner .banner__text a {
   animation: bounce 1s infinite;
-  background-color: #d43335;
+  background-color: #db2821;
   border-radius: 20px;
   color: #ffffff;
   display: block;
@@ -377,7 +378,7 @@ header .header__hamburger img {
 }
 .main__banner .banner__image-container {
   align-items: center;
-  background-color: #d43335;
+  background-color: #db2821;
   border-radius: 20px;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
   display: flex;
@@ -427,7 +428,7 @@ header .header__hamburger img {
     font-size: 1.5rem;
   }
   .main__banner .banner__image-container {
-    margin: 50px 0 -20px;
+    margin: 30px 0 -40px;
     min-height: 250px;
     min-width: 250px;
   }
@@ -449,52 +450,134 @@ header .header__hamburger img {
 }
 .main__about {
   align-items: center;
-  background-color: #f7f2f2;
+  background-color: #db272113;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 .main__about h2 {
-  border-left: 10px solid #d43335;
-  color: #d43335;
+  border-left: 10px solid #db2821;
+  color: #db2821;
   font-family: "roboto-bold";
   font-size: 3rem;
   font-weight: 900;
-  margin: 50px 0 80px;
+  margin: 50px 0;
+  position: relative;
 }
 .main__about .about__content {
   display: flex;
 }
 .main__about .about__content .about__image-container {
   align-items: center;
-  background-color: #d43335;
+  background-color: #db2821;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
   display: flex;
   justify-content: center;
-  margin-top: -70px;
-  min-height: 500px;
-  min-width: 500px;
+  margin-top: -30px;
+  min-height: 400px;
+  min-width: 400px;
 }
 .main__about .about__content .about__image-container .image-container__content {
   background-color: #ffffff;
   border-radius: 20px;
-  height: 480px;
+  height: 380px;
   overflow: hidden;
-  width: 480px;
+  width: 380px;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
 }
 .main__about .about__content .about__image-container .image-container__content img {
   margin: -20px 0 0 50px;
 }
 .main__about .about__text {
-  width: 55%;
   height: 100%;
+  width: 55%;
 }
 .main__about .about__text p {
   color: black;
   font-family: "roboto";
   font-size: 1.2rem;
   line-height: 30px;
+}
+
+@media screen and (max-width: 978px) {
+  .about__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about__content .about__image-container {
+    margin-top: -70px;
+    max-height: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    min-width: 300px;
+  }
+  .about__content .about__image-container .image-container__content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 280px;
+    overflow: hidden;
+    width: 280px;
+  }
+  .about__content .about__image-container .image-container__content img {
+    margin: -20px 0 0 50px;
+  }
+
+  .about__text {
+    height: 100%;
+    width: 80% !important;
+  }
+  .about__text p {
+    color: black;
+    font-family: "roboto";
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 978px) {
+  .main__about h2 {
+    font-size: 1.8rem;
+    padding: 5px;
+  }
+  .main__about .about__image-container {
+    margin-top: -70px;
+    max-height: 280px !important;
+    max-width: 280px !important;
+    min-height: 280px !important;
+    min-width: 280px !important;
+  }
+  .main__about .about__image-container .image-container__content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 260px !important;
+    overflow: hidden;
+    width: 260px !important;
+  }
+  .main__about .about__image-container .image-container__content img {
+    margin: -50px 0 0 -30px !important;
+  }
+}
+@media screen and (max-width: 328px) {
+  .main__about h2 {
+    font-size: 1.5rem;
+  }
+  .main__about .about__image-container {
+    max-height: 230px !important;
+    max-width: 230px !important;
+    min-height: 230px !important;
+    min-width: 230px !important;
+  }
+  .main__about .about__image-container .image-container__content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 210px !important;
+    overflow: hidden;
+    width: 210px !important;
+  }
+  .main__about .about__image-container .image-container__content img {
+    margin: -65px 0 0 -50px !important;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
