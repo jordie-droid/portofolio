@@ -256,4 +256,9 @@ a {
   background: linear-gradient(to bottom, $defaultColor, $primaryColor);
 }
 
-@import "header.scss", "socials.scss", "banner.scss", "about.scss";
+.clip-linear-gradient {
+  background: linear-gradient(to bottom, $defaultColor, $primaryColor);
+}
+
+@import "header.scss", "socials.scss", "banner.scss", "about.scss",
+  "services.scss", "skills.scss";

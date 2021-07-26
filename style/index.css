@@ -255,6 +255,10 @@ a {
   background: linear-gradient(to bottom, #ffffff, #db272113);
 }
 
+.clip-linear-gradient {
+  background: linear-gradient(to bottom, #ffffff, #db272113);
+}
+
 header {
   align-items: center;
   background-color: #db2821;
@@ -319,7 +323,7 @@ header .header__hamburger img {
 .main__social-media {
   align-items: center;
   background-color: #db2821;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
   box-shadow: 0 0 4px #000;
   display: flex;
   flex-direction: column;
@@ -578,6 +582,228 @@ header .header__hamburger img {
   .main__about .about__image-container .image-container__content img {
     margin: -65px 0 0 -50px !important;
   }
+}
+.main__services {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main__services h2 {
+  border-left: 10px solid #db2821;
+  color: #db2821;
+  font-family: "roboto-bold";
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 50px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.main__services .services__content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.main__services .services__content .content__card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.main__services .services__content .content__card .card__image-container {
+  align-items: center;
+  background-color: #db2821;
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  min-height: 300px;
+  min-width: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+.main__services .services__content .content__card .card__image-container img {
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  height: 280px;
+  width: 280px;
+}
+.main__services .services__content .content__card .card__image-container::after {
+  background-color: #db2821;
+  bottom: -100%;
+  background: linear-gradient(to bottom, #ffffff, #db2821);
+  content: "";
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  transition: 1.05s;
+  width: 100%;
+  z-index: 5;
+}
+.main__services .services__content .content__card h3 {
+  color: #000000;
+  font-family: "roboto";
+}
+.main__services .services__content .content__card:hover .card__image-container::after {
+  background-color: #db2821;
+  bottom: 0;
+  background: linear-gradient(to bottom, #ffffff, #db2821);
+  content: "";
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+.main__services .services__content .content__card:hover h3 {
+  color: #db2821;
+}
+
+@media screen and (max-width: 338px) {
+  .main__services h2 {
+    font-size: 1.5rem;
+  }
+  .main__services .services__content .content__card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  .main__services .services__content .content__card .card__image-container {
+    height: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    width: 200px;
+  }
+  .main__services .services__content .content__card .card__image-container img {
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+    height: 180px;
+    width: 180px;
+  }
+  .main__services .services__content .content__card .card__image-container::after {
+    background-color: #db2821;
+    bottom: -100%;
+    background: linear-gradient(to bottom, #ffffff, #db2821);
+    content: "";
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    transition: 1.05s;
+    width: 100%;
+    z-index: 5;
+  }
+  .main__services .services__content .content__card h3 {
+    color: #000000;
+    font-family: "roboto";
+  }
+  .main__services .services__content .content__card:hover .card__image-container::after {
+    background-color: #db2821;
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffffff, #db2821);
+    content: "";
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+  }
+  .main__services .services__content .content__card:hover h3 {
+    color: #db2821;
+  }
+}
+.main__skills {
+  align-items: center;
+  background-color: #db272113;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main__skills h2 {
+  border-left: 10px solid #db2821;
+  color: #db2821;
+  font-family: "roboto-bold";
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 50px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.main__skills .skills__container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.main__skills .skills__container .container__hard {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #db2821;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  width: 40%;
+}
+.main__skills .skills__container .container__hard h3 {
+  border-left: 10px solid #db2821;
+  color: #db2821;
+  font-family: "roboto-bold";
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  position: relative;
+}
+.main__skills .skills__container .container__hard .hard__techno {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__skills .skills__container .container__hard .hard__techno .techno__logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.main__skills .skills__container .container__hard .hard__techno .techno__logo img {
+  height: 50px;
+  margin: 20px 20px 5px 20px;
+  width: 50px;
+}
+.main__skills .skills__container .container__hard .hard__techno .techno__logo p {
+  color: #db2821;
+  font-family: "roboto";
+  font-size: 1rem;
+}
+.main__skills .skills__container .container__soft {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #db2821;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  width: 40%;
+}
+.main__skills .skills__container .container__soft h3 {
+  border-left: 10px solid #db2821;
+  color: #db2821;
+  font-family: "roboto-bold";
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  position: relative;
+}
+.main__skills .skills__container .container__soft .soft__skills-container {
+  padding: 0 40px;
+  width: 100%;
+}
+.main__skills .skills__container .container__soft .soft__skills-container ol li {
+  color: #db2821;
+  font-family: "roboto";
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
