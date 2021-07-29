@@ -3,6 +3,57 @@
   background-color: $primaryColor;
   display: flex;
   flex-direction: column;
+  padding: 0 0 50px;
+  .stat {
+    background-color: $defaultColor;
+    clip-path: polygon(
+      92.32051% 40%,
+      93.79385% 43.1596%,
+      94.69616% 46.52704%,
+      95% 50%,
+      94.69616% 53.47296%,
+      93.79385% 56.8404%,
+      92.32051% 60%,
+      79.82051% 81.65064%,
+      77.82089% 84.50639%,
+      75.35575% 86.97152%,
+      72.5% 88.97114%,
+      69.3404% 90.44449%,
+      65.97296% 91.34679%,
+      62.5% 91.65064%,
+      37.5% 91.65064%,
+      34.02704% 91.34679%,
+      30.6596% 90.44449%,
+      27.5% 88.97114%,
+      24.64425% 86.97152%,
+      22.17911% 84.50639%,
+      20.17949% 81.65064%,
+      7.67949% 60%,
+      6.20615% 56.8404%,
+      5.30384% 53.47296%,
+      5% 50%,
+      5.30384% 46.52704%,
+      6.20615% 43.1596%,
+      7.67949% 40%,
+      20.17949% 18.34936%,
+      22.17911% 15.49361%,
+      24.64425% 13.02848%,
+      27.5% 11.02886%,
+      30.6596% 9.55551%,
+      34.02704% 8.65321%,
+      37.5% 8.34936%,
+      62.5% 8.34936%,
+      65.97296% 8.65321%,
+      69.3404% 9.55551%,
+      72.5% 11.02886%,
+      75.35575% 13.02848%,
+      77.82089% 15.49361%,
+      79.82051% 18.34936%
+    );
+    height: 80px;
+    margin-top: -45px;
+    width: 50%;
+  }
   h2 {
     border-left: 10px solid $secondaryColor;
     color: $secondaryColor;
@@ -14,7 +65,6 @@
     position: relative;
   }
   .skills__container {
-    border: solid 1px #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -26,7 +76,7 @@
       box-shadow: 0 0 10px $secondaryColor;
       display: flex;
       flex-direction: column;
-      margin: 30px;
+      margin: 10px;
       padding: 30px 0;
       h3 {
         border-left: 10px solid $secondaryColor;
@@ -41,6 +91,7 @@
       .hard__techno {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         .techno__logo {
           align-items: center;
           display: flex;
@@ -65,7 +116,7 @@
       box-shadow: 0 0 10px $secondaryColor;
       display: flex;
       flex-direction: column;
-      margin: 30px;
+      margin: 10px;
       padding: 30px 0;
       h3 {
         border-left: 10px solid $secondaryColor;
@@ -87,6 +138,81 @@
             font-size: 1.3rem;
             margin-bottom: 10px;
           }
+        }
+      }
+    }
+    .container__lang {
+      align-items: center;
+      background-color: $defaultColor;
+      border-radius: 10px;
+      box-shadow: 0 0 10px $secondaryColor;
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 30px 10px;
+      h3 {
+        border-left: 10px solid $secondaryColor;
+        color: $secondaryColor;
+        font-family: "roboto-bold";
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        position: relative;
+      }
+      .lang__content {
+        p {
+          color: $secondaryColor;
+          font-family: "roboto";
+          font-size: 1.3rem !important;
+          margin: 5px 0;
+        }
+        .content__lang {
+          background-color: black;
+          height: 5px;
+          width: 200px;
+        }
+        .lang__fr {
+          background-color: $secondaryColor;
+          height: 100%;
+          width: 80%;
+        }
+        .lang__an {
+          background-color: $secondaryColor;
+          height: 100%;
+          width: 45%;
+        }
+        .lang__sw {
+          background-color: $secondaryColor;
+          height: 100%;
+          width: 50%;
+        }
+        .lang__li {
+          background-color: $secondaryColor;
+          height: 100%;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .main__skills {
+    h2 {
+      font-size: 2rem !important;
+    }
+    .skills__container {
+      .container__hard {
+        h3 {
+          border-left: 10px solid $secondaryColor;
+          color: $secondaryColor;
+          font-family: "roboto-bold";
+          font-size: 1.5rem;
+          font-weight: 900;
+          margin-bottom: 30px;
+          padding-left: 20px;
+          position: relative;
         }
       }
     }
