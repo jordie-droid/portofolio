@@ -15,11 +15,15 @@
     height: 100%;
     width: 50%;
     .text__graduation {
-      color: $secondaryColor;
+      color: $defaultColor;
       font-family: "roboto-bold";
       font-size: 3rem;
       font-weight: bolder;
       text-align: center;
+      text-shadow: 2px 2px 0 $secondaryColor, 2px -2px 0 $secondaryColor,
+        -2px 2px 0 $secondaryColor, -2px -2px 0 $secondaryColor,
+        2px 0px 0 $secondaryColor, 0px 2px 0 $secondaryColor,
+        -2px 0px 0 $secondaryColor, 0px -2px 0 $secondaryColor;
     }
     a {
       animation: bounce 1s infinite;

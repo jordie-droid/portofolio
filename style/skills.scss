@@ -3,7 +3,6 @@
   background-color: $primaryColor;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   h2 {
     border-left: 10px solid $secondaryColor;
     color: $secondaryColor;
@@ -15,9 +14,11 @@
     position: relative;
   }
   .skills__container {
+    border: solid 1px #000;
     display: flex;
-    justify-content: space-around;
-    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
     .container__hard {
       align-items: center;
       background-color: $defaultColor;
@@ -25,8 +26,8 @@
       box-shadow: 0 0 10px $secondaryColor;
       display: flex;
       flex-direction: column;
+      margin: 30px;
       padding: 30px 0;
-      width: 40%;
       h3 {
         border-left: 10px solid $secondaryColor;
         color: $secondaryColor;
@@ -64,8 +65,8 @@
       box-shadow: 0 0 10px $secondaryColor;
       display: flex;
       flex-direction: column;
+      margin: 30px;
       padding: 30px 0;
-      width: 40%;
       h3 {
         border-left: 10px solid $secondaryColor;
         color: $secondaryColor;

@@ -4,17 +4,22 @@ $defaultColor: #ffffff;
 
 @font-face {
   font-family: "carosello";
-  src: url(/font/Carosello_Font/Carosello/Carosello-Regular.otf);
+  src: url("/font/Carosello_Font/Carosello/Carosello-Regular.otf");
 }
 
 @font-face {
   font-family: "roboto";
-  src: url(/font/roboto/Roboto-Regular.ttf);
+  src: url("/font/roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "roboto-bold";
-  src: url(/font/roboto/Roboto-Bold.ttf);
+  src: url("/font/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("/font/poppins/Poppins-Bold.ttf");
 }
 
 * {
