@@ -137,3 +137,14 @@
     }
   }
 }
+
+@media screen and (max-width: 978px) {
+  .main__contact {
+    h2 {
+      font-size: 2rem !important;
+    }
+    .contact__form {
+      width: 90%;
+    }
+  }
+}
