@@ -1,6 +1,6 @@
-.main__realisations {
+.main__contact {
   align-items: center;
-  background-color: $defaultColor;
+  background-color: $primaryColor;
   display: flex;
   flex-direction: column;
   padding: 0 0 50px;
@@ -51,7 +51,7 @@
       79.82051% 18.34936%
     );
     height: 80px;
-    margin-top: -35px;
+    margin-top: -45px;
     width: 50%;
   }
   h2 {
@@ -64,54 +64,75 @@
     padding-left: 20px;
     position: relative;
   }
-  .realisations__content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    .content__card {
-      border-radius: 4px;
-      box-shadow: 0 0 4px $secondaryColor;
-      height: 300px;
-      margin: 5px;
-      overflow: hidden;
-      transition: 1s;
-      width: 300px;
-      .card__image-container {
-        height: 50%;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        img {
-          transition: 1s;
-          width: 350px;
-        }
-      }
-      .card__description {
-        background-color: $defaultColor;
+  .contact__form {
+    background-color: $defaultColor;
+    border-radius: 5px;
+    box-shadow: 0 0 4px $secondaryColor;
+    padding: 20px;
+    width: 40%;
+    .form__group-field {
+      width: 100%;
+      label {
         color: $secondaryColor;
         font-family: "roboto";
-        padding: 10px;
-        position: relative;
       }
-      &:hover {
-        cursor: pointer;
-        margin-top: -20px;
+      input {
+        border: none;
+        border: solid 1px $primaryColor;
+        margin: 10px 0;
+        padding: 15px 10px;
+        transition: 1s;
+        width: 100%;
+        &:hover {
+          border-color: $secondaryColor;
+        }
+        &:focus {
+          border-color: $secondaryColor;
+          outline: none;
+        }
       }
     }
-  }
-}
-
-@media screen and (max-width: 978px) {
-  .main__realisations {
-    h2 {
-      font-size: 2rem !important;
+    .form__group-field-area {
+      width: 100%;
+      label {
+        color: $secondaryColor;
+        font-family: "roboto";
+      }
+      textarea {
+        border: none;
+        border: solid 1px $primaryColor;
+        margin: 10px 0;
+        padding: 15px 10px;
+        transition: 1s;
+        width: 100%;
+        &:hover {
+          border-color: $secondaryColor;
+        }
+        &:focus {
+          border-color: $secondaryColor;
+          outline: none;
+        }
+      }
     }
-    .realisations__content {
-      .content__card {
-        height: 380px;
-        width: 230px;
+    .form__button {
+      width: 100%;
+      button {
+        background-color: $primaryColor;
+        border: none;
+        color: $secondaryColor;
+        font-family: "roboto";
+        font-size: 1.05rem;
+        padding: 20px;
+        transition: 1s;
+        width: 100%;
+        &:hover {
+          background-color: $secondaryColor;
+          color: $defaultColor;
+          cursor: pointer;
+        }
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
