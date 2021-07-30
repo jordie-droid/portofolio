@@ -205,14 +205,17 @@
     .skills__container {
       .container__hard {
         h3 {
-          border-left: 10px solid $secondaryColor;
-          color: $secondaryColor;
-          font-family: "roboto-bold";
           font-size: 1.5rem;
-          font-weight: 900;
-          margin-bottom: 30px;
-          padding-left: 20px;
-          position: relative;
+        }
+      }
+      .container__soft {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+      .container__lang {
+        h3 {
+          font-size: 1.5rem;
         }
       }
     }

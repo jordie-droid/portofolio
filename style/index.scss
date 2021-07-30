@@ -1,5 +1,5 @@
-$primaryColor: #db272113;
-$secondaryColor: #db2821;
+$primaryColor: #4767be13;
+$secondaryColor: #6462b4;
 $defaultColor: #ffffff;
 
 @font-face {
@@ -225,7 +225,9 @@ a {
 }
 
 .active {
-  color: black !important;
+  border-left: solid 1px $defaultColor;
+  border-right: solid 1px $defaultColor;
+  padding: 0 5px;
 }
 
 .hide-menu {
@@ -266,4 +268,4 @@ a {
 }
 
 @import "header.scss", "socials.scss", "banner.scss", "about.scss",
-  "services.scss", "skills.scss";
+  "services.scss", "skills.scss", "realisations.scss";

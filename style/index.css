@@ -225,7 +225,9 @@ a {
 }
 
 .active {
-  color: black !important;
+  border-left: solid 1px #ffffff;
+  border-right: solid 1px #ffffff;
+  padding: 0 5px;
 }
 
 .hide-menu {
@@ -256,16 +258,16 @@ a {
   }
 }
 .linear-gradient {
-  background: linear-gradient(to bottom, #ffffff, #db272113);
+  background: linear-gradient(to bottom, #ffffff, #4767be13);
 }
 
 .clip-linear-gradient {
-  background: linear-gradient(to bottom, #ffffff, #db272113);
+  background: linear-gradient(to bottom, #ffffff, #4767be13);
 }
 
 header {
   align-items: center;
-  background-color: #db2821;
+  background-color: #6462b4;
   display: flex;
   height: 80px;
   justify-content: space-around;
@@ -290,7 +292,6 @@ header .header__menu .list__item .item__link {
   color: #ffffff;
   font-family: "roboto";
   font-size: 1.15rem;
-  font-weight: 400;
   position: relative;
 }
 header .header__menu .list__item .item__link:hover {
@@ -307,7 +308,7 @@ header .header__hamburger img {
 
 @media screen and (max-width: 868px) {
   .header__menu {
-    background-color: #db2821;
+    background-color: #6462b4;
     visibility: hidden;
     flex-direction: column;
     height: 92vh;
@@ -325,19 +326,31 @@ header .header__hamburger img {
 }
 .main__social-media {
   align-items: center;
-  background-color: #db2821;
-  border-radius: 0 10px 10px 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  left: 0;
-  position: fixed;
-  transform: translateY(-50%);
-  top: 55%;
-  width: 40px;
-  z-index: 998;
+  margin-top: 20px;
+  position: relative;
 }
-.main__social-media img {
+.main__social-media .media {
+  align-items: center;
+  background-color: #ffffff;
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  display: flex;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+}
+.main__social-media .media .image-continer {
+  align-items: center;
+  background-color: #4767be13;
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  display: flex;
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+}
+.main__social-media .media .image-continer img {
   height: 20px;
   margin: 10px;
   width: 20px;
@@ -367,11 +380,11 @@ header .header__hamburger img {
   font-size: 3rem;
   font-weight: bolder;
   text-align: center;
-  text-shadow: 2px 2px 0 #db2821, 2px -2px 0 #db2821, -2px 2px 0 #db2821, -2px -2px 0 #db2821, 2px 0px 0 #db2821, 0px 2px 0 #db2821, -2px 0px 0 #db2821, 0px -2px 0 #db2821;
+  text-shadow: 2px 2px 0 #6462b4, 2px -2px 0 #6462b4, -2px 2px 0 #6462b4, -2px -2px 0 #6462b4, 2px 0px 0 #6462b4, 0px 2px 0 #6462b4, -2px 0px 0 #6462b4, 0px -2px 0 #6462b4;
 }
 .main__banner .banner__text a {
   animation: bounce 1s infinite;
-  background-color: #db2821;
+  background-color: #6462b4;
   border-radius: 20px;
   color: #ffffff;
   display: block;
@@ -386,7 +399,7 @@ header .header__hamburger img {
 }
 .main__banner .banner__image-container {
   align-items: center;
-  background-color: #db2821;
+  background-color: #6462b4;
   border-radius: 20px;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
   display: flex;
@@ -458,7 +471,7 @@ header .header__hamburger img {
 }
 .main__about {
   align-items: center;
-  background-color: #db272113;
+  background-color: #4767be13;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -472,8 +485,8 @@ header .header__hamburger img {
   width: 50%;
 }
 .main__about h2 {
-  border-left: 10px solid #db2821;
-  color: #db2821;
+  border-left: 10px solid #6462b4;
+  color: #6462b4;
   font-family: "roboto-bold";
   font-size: 3rem;
   font-weight: 900;
@@ -485,7 +498,7 @@ header .header__hamburger img {
 }
 .main__about .about__content .about__image-container {
   align-items: center;
-  background-color: #db2821;
+  background-color: #6462b4;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
   display: flex;
   justify-content: center;
@@ -506,7 +519,7 @@ header .header__hamburger img {
 }
 .main__about .about__text {
   height: 100%;
-  width: 55%;
+  width: 65%;
 }
 .main__about .about__text p {
   color: black;
@@ -609,8 +622,8 @@ header .header__hamburger img {
   width: 50%;
 }
 .main__services h2 {
-  border-left: 10px solid #db2821;
-  color: #db2821;
+  border-left: 10px solid #6462b4;
+  color: #6462b4;
   font-family: "roboto-bold";
   font-size: 3rem;
   font-weight: 900;
@@ -634,7 +647,7 @@ header .header__hamburger img {
 }
 .main__services .services__content .content__card .card__image-container {
   align-items: center;
-  background-color: #db2821;
+  background-color: #6462b4;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
   display: flex;
   height: 300px;
@@ -651,9 +664,9 @@ header .header__hamburger img {
   width: 280px;
 }
 .main__services .services__content .content__card .card__image-container::after {
-  background-color: #db2821;
+  background-color: #6462b4;
   bottom: -100%;
-  background: linear-gradient(to bottom, #ffffff, #db2821);
+  background: linear-gradient(to bottom, #ffffff, #6462b4);
   content: "";
   height: 100%;
   opacity: 0.5;
@@ -667,9 +680,9 @@ header .header__hamburger img {
   font-family: "roboto";
 }
 .main__services .services__content .content__card:hover .card__image-container::after {
-  background-color: #db2821;
+  background-color: #6462b4;
   bottom: 0;
-  background: linear-gradient(to bottom, #ffffff, #db2821);
+  background: linear-gradient(to bottom, #ffffff, #6462b4);
   content: "";
   height: 100%;
   opacity: 0.5;
@@ -678,7 +691,7 @@ header .header__hamburger img {
   z-index: 5;
 }
 .main__services .services__content .content__card:hover h3 {
-  color: #db2821;
+  color: #6462b4;
 }
 
 @media screen and (max-width: 338px) {
@@ -703,9 +716,9 @@ header .header__hamburger img {
     width: 180px;
   }
   .main__services .services__content .content__card .card__image-container::after {
-    background-color: #db2821;
+    background-color: #6462b4;
     bottom: -100%;
-    background: linear-gradient(to bottom, #ffffff, #db2821);
+    background: linear-gradient(to bottom, #ffffff, #6462b4);
     content: "";
     height: 100%;
     opacity: 0.5;
@@ -719,9 +732,9 @@ header .header__hamburger img {
     font-family: "roboto";
   }
   .main__services .services__content .content__card:hover .card__image-container::after {
-    background-color: #db2821;
+    background-color: #6462b4;
     bottom: 0;
-    background: linear-gradient(to bottom, #ffffff, #db2821);
+    background: linear-gradient(to bottom, #ffffff, #6462b4);
     content: "";
     height: 100%;
     opacity: 0.5;
@@ -730,7 +743,7 @@ header .header__hamburger img {
     z-index: 5;
   }
   .main__services .services__content .content__card:hover h3 {
-    color: #db2821;
+    color: #6462b4;
   }
 }
 @media screen and (max-width: 978px) {
@@ -740,7 +753,7 @@ header .header__hamburger img {
 }
 .main__skills {
   align-items: center;
-  background-color: #db272113;
+  background-color: #4767be13;
   display: flex;
   flex-direction: column;
   padding: 0 0 50px;
@@ -753,8 +766,8 @@ header .header__hamburger img {
   width: 50%;
 }
 .main__skills h2 {
-  border-left: 10px solid #db2821;
-  color: #db2821;
+  border-left: 10px solid #6462b4;
+  color: #6462b4;
   font-family: "roboto-bold";
   font-size: 3rem;
   font-weight: 900;
@@ -772,15 +785,15 @@ header .header__hamburger img {
   align-items: center;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px #db2821;
+  box-shadow: 0 0 10px #6462b4;
   display: flex;
   flex-direction: column;
   margin: 10px;
   padding: 30px 0;
 }
 .main__skills .skills__container .container__hard h3 {
-  border-left: 10px solid #db2821;
-  color: #db2821;
+  border-left: 10px solid #6462b4;
+  color: #6462b4;
   font-family: "roboto-bold";
   font-size: 2rem;
   font-weight: 900;
@@ -804,7 +817,7 @@ header .header__hamburger img {
   width: 50px;
 }
 .main__skills .skills__container .container__hard .hard__techno .techno__logo p {
-  color: #db2821;
+  color: #6462b4;
   font-family: "roboto";
   font-size: 1rem;
 }
@@ -812,15 +825,15 @@ header .header__hamburger img {
   align-items: center;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px #db2821;
+  box-shadow: 0 0 10px #6462b4;
   display: flex;
   flex-direction: column;
   margin: 10px;
   padding: 30px 0;
 }
 .main__skills .skills__container .container__soft h3 {
-  border-left: 10px solid #db2821;
-  color: #db2821;
+  border-left: 10px solid #6462b4;
+  color: #6462b4;
   font-family: "roboto-bold";
   font-size: 2rem;
   font-weight: 900;
@@ -833,7 +846,7 @@ header .header__hamburger img {
   width: 100%;
 }
 .main__skills .skills__container .container__soft .soft__skills-container ol li {
-  color: #db2821;
+  color: #6462b4;
   font-family: "roboto";
   font-size: 1.3rem;
   margin-bottom: 10px;
@@ -842,15 +855,15 @@ header .header__hamburger img {
   align-items: center;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px #db2821;
+  box-shadow: 0 0 10px #6462b4;
   display: flex;
   flex-direction: column;
   margin: 10px;
   padding: 30px 10px;
 }
 .main__skills .skills__container .container__lang h3 {
-  border-left: 10px solid #db2821;
-  color: #db2821;
+  border-left: 10px solid #6462b4;
+  color: #6462b4;
   font-family: "roboto-bold";
   font-size: 2rem;
   font-weight: 900;
@@ -859,7 +872,7 @@ header .header__hamburger img {
   position: relative;
 }
 .main__skills .skills__container .container__lang .lang__content p {
-  color: #db2821;
+  color: #6462b4;
   font-family: "roboto";
   font-size: 1.3rem !important;
   margin: 5px 0;
@@ -870,22 +883,22 @@ header .header__hamburger img {
   width: 200px;
 }
 .main__skills .skills__container .container__lang .lang__content .lang__fr {
-  background-color: #db2821;
+  background-color: #6462b4;
   height: 100%;
   width: 80%;
 }
 .main__skills .skills__container .container__lang .lang__content .lang__an {
-  background-color: #db2821;
+  background-color: #6462b4;
   height: 100%;
   width: 45%;
 }
 .main__skills .skills__container .container__lang .lang__content .lang__sw {
-  background-color: #db2821;
+  background-color: #6462b4;
   height: 100%;
   width: 50%;
 }
 .main__skills .skills__container .container__lang .lang__content .lang__li {
-  background-color: #db2821;
+  background-color: #6462b4;
   height: 100%;
   width: 90%;
 }
@@ -895,14 +908,85 @@ header .header__hamburger img {
     font-size: 2rem !important;
   }
   .main__skills .skills__container .container__hard h3 {
-    border-left: 10px solid #db2821;
-    color: #db2821;
-    font-family: "roboto-bold";
     font-size: 1.5rem;
-    font-weight: 900;
-    margin-bottom: 30px;
-    padding-left: 20px;
-    position: relative;
+  }
+  .main__skills .skills__container .container__soft h3 {
+    font-size: 1.5rem;
+  }
+  .main__skills .skills__container .container__lang h3 {
+    font-size: 1.5rem;
+  }
+}
+.main__realisations {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px;
+}
+.main__realisations .stat {
+  background-color: #ffffff;
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  height: 80px;
+  margin-top: -35px;
+  width: 50%;
+}
+.main__realisations h2 {
+  border-left: 10px solid #6462b4;
+  color: #6462b4;
+  font-family: "roboto-bold";
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 50px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.main__realisations .realisations__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.main__realisations .realisations__content .content__card {
+  border-radius: 4px;
+  height: 300px;
+  margin: 5px;
+  overflow: hidden;
+  transition: 1s;
+  width: 300px;
+}
+.main__realisations .realisations__content .content__card .card__image-container {
+  height: 50%;
+  overflow: hidden;
+  width: 100%;
+}
+.main__realisations .realisations__content .content__card .card__image-container img {
+  transition: 1s;
+  width: 100%;
+}
+.main__realisations .realisations__content .content__card .card__description {
+  background-color: #ffffff;
+  color: #6462b4;
+  font-family: "roboto";
+  padding: 10px;
+  position: relative;
+}
+.main__realisations .realisations__content .content__card:hover {
+  box-shadow: 0 0 4px #6462b4;
+  cursor: pointer;
+}
+.main__realisations .realisations__content .content__card:hover .card__image-container img {
+  transform: scale(2);
+}
+
+@media screen and (max-width: 978px) {
+  .main__realisations h2 {
+    font-size: 2rem !important;
+  }
+  .main__realisations .realisations__content .content__card {
+    height: 380px;
+    width: 230px;
   }
 }
 
