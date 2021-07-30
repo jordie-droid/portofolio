@@ -242,13 +242,12 @@ a {
 }
 
 .hide-menu {
-  animation: animout 1s ease-out;
-  transition: 1s;
+  animation: animout 0.3s;
   visibility: hidden !important;
 }
 
 .show-menu {
-  animation: animin 1s ease-in;
+  animation: animin 0.3s;
   visibility: visible !important;
 }
 
