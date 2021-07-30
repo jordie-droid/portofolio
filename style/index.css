@@ -1196,5 +1196,15 @@ header .header__hamburger img {
     width: 90%;
   }
 }
+footer {
+  background-color: #6462b4;
+  font-family: "roboto";
+  font-size: 1.05rem;
+  padding: 20px 10px;
+}
+footer p {
+  color: #ffffff;
+  text-align: center;
+}
 
 /*# sourceMappingURL=index.css.map */
