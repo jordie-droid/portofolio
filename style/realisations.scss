@@ -80,10 +80,11 @@
       .card__image-container {
         height: 50%;
         overflow: hidden;
+        position: relative;
         width: 100%;
         img {
           transition: 1s;
-          width: 100%;
+          width: 350px;
         }
       }
       .card__description {
@@ -96,11 +97,6 @@
       &:hover {
         box-shadow: 0 0 4px $secondaryColor;
         cursor: pointer;
-        .card__image-container {
-          img {
-            transform: scale(2);
-          }
-        }
       }
     }
   }

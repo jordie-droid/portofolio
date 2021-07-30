@@ -198,6 +198,7 @@
       h3 {
         color: #000000;
         font-family: "roboto";
+        text-align: center;
       }
       &:hover .card__image-container::after {
         background-color: $secondaryColor;

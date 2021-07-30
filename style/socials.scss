@@ -54,8 +54,10 @@
     );
     display: flex;
     height: 80px;
-    width: 80px;
     justify-content: center;
+    margin: 0 5px;
+    transition: 1s;
+    width: 80px;
     .image-continer {
       align-items: center;
       background-color: $primaryColor;
@@ -112,6 +114,9 @@
         margin: 10px;
         width: 20px;
       }
+    }
+    &:hover {
+      transform: scale(1.2);
     }
   }
 }
