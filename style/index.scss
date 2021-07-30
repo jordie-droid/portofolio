@@ -27,6 +27,17 @@ $defaultColor: #ffffff;
   padding: 0;
   box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px $defaultColor;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $secondaryColor;
+}
 
 a {
   text-decoration: none;
@@ -268,4 +279,5 @@ a {
 }
 
 @import "header.scss", "socials.scss", "banner.scss", "about.scss",
-  "services.scss", "skills.scss", "realisations.scss","contact.scss";
+  "services.scss", "skills.scss", "realisations.scss", "contact.scss",
+  "newsletter.scss";
