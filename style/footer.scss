@@ -1,0 +1,10 @@
+footer {
+  background-color: $secondaryColor;
+  font-family: "roboto";
+  font-size: 1.05rem;
+  padding: 20px 10px;
+  p {
+    color: $defaultColor;
+    text-align: center;
+  }
+}

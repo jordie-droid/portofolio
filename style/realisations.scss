@@ -1,0 +1,125 @@
+.main__realisations {
+  align-items: center;
+  background-color: $defaultColor;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px;
+  .stat {
+    background-color: $defaultColor;
+    clip-path: polygon(
+      92.32051% 40%,
+      93.79385% 43.1596%,
+      94.69616% 46.52704%,
+      95% 50%,
+      94.69616% 53.47296%,
+      93.79385% 56.8404%,
+      92.32051% 60%,
+      79.82051% 81.65064%,
+      77.82089% 84.50639%,
+      75.35575% 86.97152%,
+      72.5% 88.97114%,
+      69.3404% 90.44449%,
+      65.97296% 91.34679%,
+      62.5% 91.65064%,
+      37.5% 91.65064%,
+      34.02704% 91.34679%,
+      30.6596% 90.44449%,
+      27.5% 88.97114%,
+      24.64425% 86.97152%,
+      22.17911% 84.50639%,
+      20.17949% 81.65064%,
+      7.67949% 60%,
+      6.20615% 56.8404%,
+      5.30384% 53.47296%,
+      5% 50%,
+      5.30384% 46.52704%,
+      6.20615% 43.1596%,
+      7.67949% 40%,
+      20.17949% 18.34936%,
+      22.17911% 15.49361%,
+      24.64425% 13.02848%,
+      27.5% 11.02886%,
+      30.6596% 9.55551%,
+      34.02704% 8.65321%,
+      37.5% 8.34936%,
+      62.5% 8.34936%,
+      65.97296% 8.65321%,
+      69.3404% 9.55551%,
+      72.5% 11.02886%,
+      75.35575% 13.02848%,
+      77.82089% 15.49361%,
+      79.82051% 18.34936%
+    );
+    height: 80px;
+    margin-top: -35px;
+    width: 50%;
+  }
+  h2 {
+    border-left: 10px solid $secondaryColor;
+    color: $secondaryColor;
+    font-family: "roboto-bold";
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 50px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  .realisations__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    .content__card {
+      border-radius: 4px;
+      height: 420px;
+      margin: 5px;
+      overflow: hidden;
+      transition: 1s;
+      width: 300px;
+      .card__image-container {
+        height: 200px;
+        overflow: hidden;
+        width: 100%;
+        img {
+          width: 350px;
+          height: 200px;
+        }
+      }
+      .card__description {
+        background-color: $defaultColor;
+        color: $secondaryColor;
+        font-family: "roboto";
+        padding: 10px;
+        position: relative;
+        p {
+          text-align: center;
+        }
+        h3 {
+          font-size: 1.9rem;
+          margin: 0 0 20px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+      &:hover {
+        box-shadow: 0 0 4px $secondaryColor;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .main__realisations {
+    h2 {
+      font-size: 2rem !important;
+    }
+    .realisations__content {
+      .content__card {
+        height: 380px;
+        width: 230px;
+      }
+    }
+  }
+}

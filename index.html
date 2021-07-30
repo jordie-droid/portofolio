@@ -1,19 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style/index.css">
 	<title>Porfolio</title>
 </head>
 <body>
 	<header>
-		<div class="header__contacts">
-			<a href="#"><img src="" alt="Me contacter par mail"></a>
-			<a href="#"><img src="" alt="Me contacter par linkedin"></a>
-			<a href="#"><img src="" alt="Me contacter par twitter"></a>
-			<a href="#"><img src="" alt="Me contacter par facebook"></a>
+		<div class="header__logo">
+			<a href="">Jlutunx</a>
+		</div>
+		<ul class="header__menu">
+			<li class="list__item m-1">
+				<a class="item__link active" href="#">Accueil</a>
+			</li>
+			<li class="list__item m-1">
+				<a class="item__link" href="#">A propos</a>
+			</li>
+			<li class="list__item m-1">
+				<a class="item__link" href="#">Services</a>
+			</li>
+			<li class="list__item m-1">
+				<a class="item__link" href="#">Compétences</a>
+			</li>
+			<li class="list__item m-1">
+				<a class="item__link" href="#">Réalisations</a>
+			</li>
+			<li class="list__item m-1">
+				<a class="item__link" href="#">Contacts</a>
+			</li>
+		</ul>
+		<div class="header__hamburger">
+			<img src="/images/hamburger.svg" alt="menu hamburger"/>
 		</div>
 	</header>
+	<main>
+		<section class="main__banner">
+			<div class="banner__text m-5 pl-2">
+				<h1 class="text__graduation mb-3">
+					Jordie LUTUNDULA développeur 
+					web Full-Stack, UX et UI Designer
+				</h1>
+				<a href="">Télécharger mon CV</a>
+			</div>
+			<div class="banner__image-container m-4">
+				<div class="image-container__content">
+					<img src="/images/IMG_20210331_133851_103-removebg-preview.png" alt="jordie lutundula">
+				</div>
+			</div>
+		</section>
+
+		<section class="main__about pb-5">
+			<div class="stat"></div>
+			<h2 class="pl-2">A propos de moi</h2>
+			<div class="about__content">				
+				<div class="about__image-container m-1">
+					<div class="image-container__content">
+						<img src="/images/IMG_20210331_133942_813-removebg-preview.png" alt=""/>
+					</div>
+				</div>
+				<div class="about__text m-1">
+					<p>
+						Passioné par l'univers de développement des logiciels, je suis licencié de l'institut supérieur pédagogique de la Gombe et
+						Détenteur d'un certicat simplon en développement web et web mobile. 
+						Je suis développeur full-stack; capable de faire l'intégration web, webdesign et former les autres.
+					</p>
+					<br>
+					<p>
+						Hormis la programmation, je suis aussi détenteur d'un certificat en technique d'élevage.
+						L'élevage m'a permis à développer la bienveillance et d'autres qualités d'encadreur.
+					</p>
+					<br>
+					<br>
+					<p>
+						Actuellement freelance et formateur à monatech
+					</p>
+					<div class ="main__social-media p-1">
+						<div class="media">
+							<div class="image-continer">
+								<a href="#">
+									<img src="/images/socials_media/mail-24-filled.svg" alt="G-mail">
+								</a>
+							</div>
+						</div>
+						<div class="media">
+							<div class="image-continer">								
+								<a href="#">
+									<img src="/images/socials_media/linkedin-fill.svg" alt="Linkedin">
+								</a>
+							</div>
+						</div>
+						<div class="media">
+							<div class="image-continer">
+								<a href="#">
+									<img src="/images/socials_media/twitter(1).svg" alt="Twitter">
+								</a>
+							</div>
+						</div>
+						<div class="media">
+							<div class="image-continer">
+								<a href="#">
+									<img src="/images/socials_media/facebook.svg" alt="Facebook">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main__services">
+			<div class="stat"></div>
+			<h2>Mes services</h2>
+			<div class="services__content">
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="/images/design.png" alt="Design image">
+					</div>
+					<h3>Web Design</h3>
+				</div>
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="/images/web.jpg" alt="Web">
+					</div>
+					<h3>Développement Web</h3>
+				</div>
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="/images/mobile.webp" alt="mobile">
+					</div>
+					<h3>Développement mobile</h3>
+				</div>
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="/images/devops.png" alt="jenkins">
+					</div>
+					<h3>Quality Assurance</h3>
+				</div>
+			</div>
+		</section>
+		<section class="main__skills">
+			<div class="stat"></div>
+			<h2>Compétences</h2>
+			<div class="skills__container">
+				<div class="container__hard">
+					<h3>Hard skills</h3>
+					<div class="hard__techno">
+						<div class="techno__logo">
+							<img src="/images/techno/java.svg" alt="logo de java">
+							<p>JAVA</p>
+						</div>
+						<div class="techno__logo">
+							<img src="/images/techno/html.svg" alt="logo de html">
+							<p>HTML</p>
+						</div>
+						<div class="techno__logo">
+							<img src="/images/techno/css.svg" alt="logo de css">
+							<p>CSS</p>
+						</div>
+						<div class="techno__logo">
+							<img src="/images/techno/js.svg" alt="logo de javascript">
+							<p>JAVASCRIPT</p>
+						</div>
+						<div class="techno__logo">
+							<img src="/images/techno/mysql.svg" alt="logo de mysql">
+							<p>MYSQL</p>
+						</div>
+						<div class="techno__logo">
+							<img src="/images/techno/postgre.svg" alt="logo de postgre">
+							<p>POSTGRE</p>
+						</div>
+						<div class="techno__logo">
+							<img src="/images/techno/sqlite.svg" alt="logo de sqlite">
+							<p>SQLITE</p>
+						</div>						
+					</div>
+				</div>
+				<div class="container__soft">
+					<h3>Soft skills</h3>
+					<div class="soft__skills-container">
+						<ol>
+							<li>Méthodologie agile (SCRUM)</li>
+							<li>Travail en équipe</li>
+							<li>Habitude du télé-travail</li>
+							<li>Gestion du temps</li>
+							<li>Pair programming</li>
+						</ol>
+					</div>
+				</div>
+				<div class="container__lang">
+					<h3>Langues</h3>
+					<div class="lang__content">
+						<p>Français</p>
+						<div class="content__lang">
+							<div class="lang__fr"></div>
+						</div>
+						<p>Anglais</p>
+						<div class="content__lang">
+							<div class="lang__an"></div>
+						</div>
+						<p>Swahili</p>
+						<div class="content__lang">
+							<div class="lang__sw"></div>
+						</div>
+						<p>Lingala</p>
+						<div class="content__lang">
+							<div class="lang__li"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main__realisations">
+			<div class="stat"></div>			
+			<h2>Réalisations</h2>
+			<div class="realisations__content">
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="./images/portfolioIO.jpg" alt="image du projet">
+					</div>
+					<div class="card__description">
+						<h3>Portfolio</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur 
+							adipisicing elit. Pariatur iure dolores 
+							unde laborum ipsum, reiciendis nulla, 
+							maxime tenetur illo doloremque ratione 
+							doloribus labore reprehenderit dolorem 
+							adipisci neque, alias nesciunt incidunt!
+
+						</p>
+					</div>
+				</div>
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="./images/suplopha.jpg" alt="image du projet">
+					</div>
+					<div class="card__description">
+						<h3>Suplopha</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur 
+							adipisicing elit. Pariatur iure dolores 
+							unde laborum ipsum, reiciendis nulla, 
+							maxime tenetur illo doloremque ratione 
+							doloribus labore reprehenderit dolorem 
+							adipisci neque, alias nesciunt incidunt!
+
+						</p>
+					</div>
+				</div>
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="./images/243movies.jpeg" alt="image du projet">
+					</div>
+					<div class="card__description">
+						<h3>243Movies</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur 
+							adipisicing elit. Pariatur iure dolores 
+							unde laborum ipsum, reiciendis nulla, 
+							maxime tenetur illo doloremque ratione 
+							doloribus labore reprehenderit dolorem 
+							adipisci neque, alias nesciunt incidunt!
+
+						</p>
+					</div>
+				</div>
+				<div class="content__card">
+					<div class="card__image-container">
+						<img src="./images/form.jpg" alt="image du projet">
+					</div>
+					<div class="card__description">
+						<h3>Liste de contacts</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur 
+							adipisicing elit. Pariatur iure dolores 
+							unde laborum ipsum, reiciendis nulla, 
+							maxime tenetur illo doloremque ratione 
+							doloribus labore reprehenderit dolorem 
+							adipisci neque, alias nesciunt incidunt!
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main__contact">
+			<div class="stat"></div>
+			<h2>Ecrivez-moi</h2>
+			<form class="contact__form">
+				<div class="form__group-field">
+					<label for="email">E-mail</label>
+					<br>
+					<input id="email" type="email" required/>
+				</div>
+				<div class="form__group-field">
+					<label for="object">Object</label>
+					<br>
+					<input id="object" type="text"/>
+				</div>
+				<div class="form__group-field-area">
+					<label for="message">Message</label>
+					<br>
+					<textarea id="message" cols="30" rows="10"></textarea>
+				</div>
+				<div class="form__button">
+					<button type="submit">Envoyer</button>
+				</div>
+			</form>
+		</section>
+		<section class="main__newsletter">
+			<div class="stat"></div>
+			<h2>Newsletter</h2>
+			<p>Inscrivez-vous à la newsletter pour rien rater à propos de moi, mes Compétences et réalisations</p>
+			<form class="newsletter__group-field">
+				<input type="text"/>
+				<button>SOUMETTRE</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright Jordie Lutundula</p>
+	</footer>
+	<script src="/js/index.js"></script>
 </body>
 </html>
