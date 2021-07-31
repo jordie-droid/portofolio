@@ -35,7 +35,7 @@ document.addEventListener("scroll", () => {
   let scrollPosition = this.scrollY;
   const percent = (scrollPosition / pageHeight) * 100;
   progressIndicator.style.width = `${percent}%`;
-  if (percent > 87) {
+  if (percent > 84) {
     progressIndicator.style.width = "100%";
   }
 });
