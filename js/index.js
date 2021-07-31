@@ -29,6 +29,8 @@ itemLinks.forEach((itemLink) =>
 const pageHeight = document.scrollingElement.getClientRects()[0].height;
 const progressIndicator = document.querySelector(".progress-content");
 
+const about = document.querySelector("#about");
+
 document.addEventListener("scroll", () => {
   let scrollPosition = this.scrollY;
   const percent = (scrollPosition / pageHeight) * 100;
