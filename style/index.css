@@ -399,18 +399,22 @@ header .header__hamburger img {
 }
 .main__banner .banner__text a {
   animation: bounce 1s infinite;
-  background-color: #6462b4;
-  border-radius: 20px;
-  color: #ffffff;
+  background-color: #4767be13;
+  color: #6462b4;
   display: block;
   font-family: "roboto";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-top: 20px;
   padding: 15px;
   position: relative;
   text-align: center;
+  transition: 1s;
   z-index: 100;
+}
+.main__banner .banner__text a:hover {
+  background-color: #6462b4;
+  color: #ffffff;
 }
 .main__banner .banner__image-container {
   align-items: center;
