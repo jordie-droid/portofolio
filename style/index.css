@@ -1195,6 +1195,7 @@ header .header__hamburger img {
 .main__newsletter .newsletter__group-field button {
   background-color: #4767be13;
   border: none;
+  color: #6462b4;
   font-family: "roboto";
   font-size: 1.05rem;
   height: 47px;
