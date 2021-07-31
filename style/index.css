@@ -1005,6 +1005,27 @@ header .header__hamburger img {
   box-shadow: 0 0 4px #6462b4;
   cursor: pointer;
 }
+.main__realisations .realisations__buttons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+.main__realisations .realisations__buttons button {
+  background-color: #4767be13;
+  border: none;
+  color: #6462b4;
+  font-size: 1.2rem;
+  padding: 15px;
+  transition: 1s;
+  width: 150px;
+}
+.main__realisations .realisations__buttons button:hover {
+  background-color: #6462b4;
+  color: #ffffff;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 978px) {
   .main__realisations h2 {

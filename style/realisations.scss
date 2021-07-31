@@ -108,6 +108,27 @@
       }
     }
   }
+  .realisations__buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    button {
+      background-color: $primaryColor;
+      border: none;
+      color: $secondaryColor;
+      font-size: 1.2rem;
+      padding: 15px;
+      transition: 1s;
+      width: 150px;
+      &:hover {
+        background-color: $secondaryColor;
+        color: $defaultColor;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 978px) {
