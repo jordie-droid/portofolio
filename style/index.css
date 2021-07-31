@@ -278,44 +278,59 @@ a {
 }
 
 header {
-  align-items: center;
-  background-color: #6462b4;
-  display: flex;
-  height: 80px;
-  justify-content: space-around;
+  height: 85px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
 }
-header .header__logo a {
+header .header {
+  align-items: center;
+  background-color: #6462b4;
+  display: flex;
+  height: 85px;
+  justify-content: space-around;
+  width: 100%;
+}
+header .header .header__logo a {
   color: #ffffff;
   font-family: "carosello";
   font-size: 2rem;
 }
-header .header__menu {
+header .header .header__menu {
   display: flex;
   justify-content: space-around;
 }
-header .header__menu .list__item {
+header .header .header__menu .list__item {
   list-style: none;
 }
-header .header__menu .list__item .item__link {
+header .header .header__menu .list__item .item__link {
   color: #ffffff;
   font-family: "roboto";
   font-size: 1.15rem;
   position: relative;
 }
-header .header__menu .list__item .item__link:hover {
+header .header .header__menu .list__item .item__link:hover {
   transition: 0.3s;
   color: black;
 }
-header .header__hamburger {
+header .header .header__hamburger {
   display: none;
 }
-header .header__hamburger img {
+header .header .header__hamburger img {
   cursor: pointer;
   width: 40px;
+}
+header .page-progress {
+  background-color: black;
+  height: 5px;
+  width: 100%;
+  transition: 0.3s;
+}
+header .page-progress .progress-content {
+  background-color: #716fd1;
+  height: 100%;
+  width: 0;
 }
 
 @media screen and (max-width: 868px) {
@@ -378,7 +393,7 @@ header .header__hamburger img {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 85px;
   width: 100%;
 }
 .main__banner .banner__text {

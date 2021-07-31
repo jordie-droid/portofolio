@@ -26,3 +26,14 @@ itemLinks.forEach((itemLink) =>
   itemLink.addEventListener("click", itemLinkAction)
 );
 
+const pageHeight = document.scrollingElement.getClientRects()[0].height;
+const progressIndicator = document.querySelector(".progress-content");
+
+document.addEventListener("scroll", () => {
+  let scrollPosition = this.scrollY;
+  const percent = (scrollPosition / pageHeight) * 100;
+  progressIndicator.style.width = `${percent}%`;
+  if (percent > 87) {
+    progressIndicator.style.width = "100%";
+  }
+});
