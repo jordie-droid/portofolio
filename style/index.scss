@@ -236,9 +236,10 @@ a {
 }
 
 .active {
-  border-left: solid 1px $defaultColor;
-  border-right: solid 1px $defaultColor;
-  padding: 0 5px;
+  background-color: #716fd1;
+  border-left: solid 1px #ffffff5d;
+  border-right: solid 1px #ffffff5d;
+  padding: 10px;
 }
 
 .hide-menu {

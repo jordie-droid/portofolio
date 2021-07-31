@@ -237,9 +237,10 @@ a {
 }
 
 .active {
-  border-left: solid 1px #ffffff;
-  border-right: solid 1px #ffffff;
-  padding: 0 5px;
+  background-color: #716fd1;
+  border-left: solid 1px #ffffff5d;
+  border-right: solid 1px #ffffff5d;
+  padding: 10px;
 }
 
 .hide-menu {
@@ -306,7 +307,7 @@ header .header__menu .list__item .item__link {
   position: relative;
 }
 header .header__menu .list__item .item__link:hover {
-  transition: 1s;
+  transition: 0.3s;
   color: black;
 }
 header .header__hamburger {
