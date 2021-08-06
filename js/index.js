@@ -32,10 +32,7 @@ const progressIndicator = document.querySelector(".progress-content");
 const about = document.querySelector("#about");
 
 document.addEventListener("scroll", () => {
-  let scrollPosition = this.scrollY;
+  let scrollPosition = this.scrollY * 1.16;
   const percent = (scrollPosition / pageHeight) * 100;
-  progressIndicator.style.width = `${percent}%`;
-  if (percent > 84) {
-    progressIndicator.style.width = "100%";
-  }
+  progressIndicator.style.width = `${Math.round(percent)}%`;
 });
