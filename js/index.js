@@ -26,7 +26,7 @@ itemLinks.forEach((itemLink) =>
   itemLink.addEventListener("click", itemLinkAction)
 );
 
-const pageHeight = document.scrollingElement.getClientRects()[0].height;
+const pageHeight = document.body.offsetHeight;
 const progressIndicator = document.querySelector(".progress-content");
 
 const about = document.querySelector("#about");
