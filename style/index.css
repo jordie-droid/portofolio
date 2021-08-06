@@ -367,7 +367,7 @@ header .page-progress .progress-content {
   height: 80px;
   justify-content: center;
   margin: 0 5px;
-  transition: 1s;
+  transition: 0.3s;
   width: 80px;
 }
 .main__social-media .media .image-continer {
@@ -385,7 +385,10 @@ header .page-progress .progress-content {
   width: 20px;
 }
 .main__social-media .media:hover {
-  transform: scale(1.2);
+  background-color: #6462b4;
+}
+.main__social-media .media:hover .image-continer {
+  background-color: #ffffff;
 }
 
 .main__banner {
