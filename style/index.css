@@ -380,9 +380,9 @@ header .page-progress .progress-content {
   justify-content: center;
 }
 .main__social-media .media .image-continer img {
-  height: 20px;
+  height: 35px;
   margin: 10px;
-  width: 20px;
+  width: 35px;
 }
 .main__social-media .media:hover {
   background-color: #6462b4;
