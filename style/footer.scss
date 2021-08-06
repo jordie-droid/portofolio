@@ -1,7 +1,9 @@
 footer {
   background-color: $secondaryColor;
+  display: flex;
   font-family: "roboto";
   font-size: 1.05rem;
+  justify-content: center;
   padding: 20px 10px;
   p {
     color: $defaultColor;
