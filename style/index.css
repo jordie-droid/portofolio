@@ -496,7 +496,7 @@ header .page-progress .progress-content {
     width: 230px;
   }
   .main__banner .banner__image-container .image-container__content img {
-    margin: -50px 0 0 -60px;
+    margin: 0 0 0 -95px;
   }
 }
 @keyframes bounce {
@@ -623,7 +623,7 @@ header .page-progress .progress-content {
     width: 260px !important;
   }
   .main__about .about__image-container .image-container__content img {
-    margin: -50px 0 0 -30px !important;
+    margin: 20px 0 0 0 !important;
   }
 }
 @media screen and (max-width: 328px) {
@@ -644,7 +644,7 @@ header .page-progress .progress-content {
     width: 210px !important;
   }
   .main__about .about__image-container .image-container__content img {
-    margin: -65px 0 0 -50px !important;
+    margin: 20px 0 0 0 !important;
   }
 }
 .main__services {
