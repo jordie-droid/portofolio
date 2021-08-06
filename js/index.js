@@ -26,13 +26,37 @@ itemLinks.forEach((itemLink) =>
   itemLink.addEventListener("click", itemLinkAction)
 );
 
-const pageHeight = document.body.offsetHeight;
+const body = document.querySelector("body");
 const progressIndicator = document.querySelector(".progress-content");
 
-const about = document.querySelector("#about");
+function pagePosition() {
+  const pixelScrolled = window.scrollY;
+  const viewPortHeight = window.innerHeight;
+  const totalHeightScrollable = body.scrollHeight;
 
-document.addEventListener("scroll", () => {
-  let scrollPosition = this.scrollY * 1.16;
-  const percent = (scrollPosition / pageHeight) * 100;
-  progressIndicator.style.width = `${Math.round(percent)}%`;
-});
+  const pixelsToPercent =
+    (pixelScrolled / (totalHeightScrollable - viewPortHeight)) * 100;
+  progressIndicator.style.width = `${Math.round(pixelsToPercent)}%`;
+}
+
+window.addEventListener("scroll", pagePosition);
+
+function functionScroll() {
+  var section = document.querySelectorAll("section"),
+    sections = {},
+    i = 0;
+
+  Array.prototype.forEach.call(section, function (e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  for (i in sections) {
+    if (sections[i] <= window.pageYOffset + 100) {
+      document.querySelector(".active").classList.remove("active");
+      document.querySelector("a[href*=" + i + "]").classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", functionScroll);
+window.addEventListener("resize", functionScroll);
