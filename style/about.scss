@@ -3,6 +3,7 @@
   background-color: $primaryColor;
   display: flex;
   flex-direction: column;
+  padding: 80px 0;
   position: relative;
   width: 100%;
   .stat {
@@ -52,7 +53,7 @@
       79.82051% 18.34936%
     );
     height: 80px;
-    margin-top: -45px;
+    margin-top: -125px;
     width: 50%;
   }
   h2 {

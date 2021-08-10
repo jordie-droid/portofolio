@@ -3,7 +3,7 @@
   background-color: $primaryColor;
   display: flex;
   flex-direction: column;
-  padding: 0 0 50px;
+  padding: 95px 0;
   .stat {
     background-color: $defaultColor;
     clip-path: polygon(
@@ -51,7 +51,7 @@
       79.82051% 18.34936%
     );
     height: 80px;
-    margin-top: -45px;
+    margin-top: -140px;
     width: 50%;
   }
   h2 {
