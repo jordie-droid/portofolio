@@ -3,8 +3,8 @@
   background-color: $defaultColor;
   display: flex;
   justify-content: center;
-  padding: 60px 0;
   margin-top: 85px;
+  padding: 70px 0;
   width: 100%;
   .banner__text {
     align-items: center;
@@ -102,6 +102,9 @@
     .image-container__content {
       background-color: $defaultColor;
       border-radius: 20px;
+      height: 280px;
+      overflow: hidden;
+      width: 280px;
       clip-path: polygon(
         92.32051% 40%,
         93.79385% 43.1596%,
@@ -146,9 +149,6 @@
         77.82089% 15.49361%,
         79.82051% 18.34936%
       );
-      height: 280px;
-      overflow: hidden;
-      width: 280px;
       img {
         margin: 0 0 0 -70px;
       }
