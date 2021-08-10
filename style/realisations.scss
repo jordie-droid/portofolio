@@ -72,7 +72,7 @@
     width: 100%;
     .content__card {
       border-radius: 4px;
-      height: 420px;
+      height: 200px;
       margin: 5px;
       overflow: hidden;
       transition: 1s;
@@ -90,8 +90,10 @@
         background-color: $defaultColor;
         color: $secondaryColor;
         font-family: "roboto";
+        opacity: 0;
         padding: 10px;
         position: relative;
+        visibility: hidden;
         p {
           text-align: center;
         }
@@ -105,6 +107,11 @@
       &:hover {
         box-shadow: 0 0 4px $secondaryColor;
         cursor: pointer;
+        height: 420px;
+        .card__description {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
   }
@@ -112,6 +119,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    margin: 70px;
     padding: 20px;
     width: 100%;
     button {

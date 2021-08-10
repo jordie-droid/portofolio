@@ -990,7 +990,7 @@ header .page-progress .progress-content {
 }
 .main__realisations .realisations__content .content__card {
   border-radius: 4px;
-  height: 420px;
+  height: 200px;
   margin: 5px;
   overflow: hidden;
   transition: 1s;
@@ -1009,8 +1009,10 @@ header .page-progress .progress-content {
   background-color: #ffffff;
   color: #6462b4;
   font-family: "roboto";
+  opacity: 0;
   padding: 10px;
   position: relative;
+  visibility: hidden;
 }
 .main__realisations .realisations__content .content__card .card__description p {
   text-align: center;
@@ -1024,11 +1026,17 @@ header .page-progress .progress-content {
 .main__realisations .realisations__content .content__card:hover {
   box-shadow: 0 0 4px #6462b4;
   cursor: pointer;
+  height: 420px;
+}
+.main__realisations .realisations__content .content__card:hover .card__description {
+  opacity: 1;
+  visibility: visible;
 }
 .main__realisations .realisations__buttons {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin: 70px;
   padding: 20px;
   width: 100%;
 }
