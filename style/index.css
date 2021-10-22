@@ -829,6 +829,7 @@ header .page-progress .progress-content {
   flex-direction: column;
   margin: 10px;
   padding: 30px 0;
+  width: 30%;
 }
 .main__skills .skills__container .container__hard h3 {
   border-left: 10px solid #6462b4;
@@ -899,6 +900,7 @@ header .page-progress .progress-content {
   flex-direction: column;
   margin: 10px;
   padding: 30px 10px;
+  width: 25%;
 }
 .main__skills .skills__container .container__lang h3 {
   border-left: 10px solid #6462b4;
@@ -910,6 +912,10 @@ header .page-progress .progress-content {
   padding-left: 20px;
   position: relative;
 }
+.main__skills .skills__container .container__lang .lang__content {
+  padding: 0 10px;
+  width: 100%;
+}
 .main__skills .skills__container .container__lang .lang__content p {
   color: #6462b4;
   font-family: "roboto";
@@ -918,8 +924,8 @@ header .page-progress .progress-content {
 }
 .main__skills .skills__container .container__lang .lang__content .content__lang {
   background-color: black;
-  height: 3px;
-  width: 200px;
+  height: 10px;
+  width: 100%;
 }
 .main__skills .skills__container .container__lang .lang__content .lang__fr {
   background-color: #6462b4;
