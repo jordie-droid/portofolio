@@ -828,7 +828,7 @@ header .page-progress .progress-content {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 30px 0;
+  padding: 30px 10px;
   width: 30%;
 }
 .main__skills .skills__container .container__hard h3 {
@@ -952,11 +952,20 @@ header .page-progress .progress-content {
   .main__skills h2 {
     font-size: 2rem !important;
   }
+  .main__skills .skills__container .container__hard {
+    width: 100%;
+  }
   .main__skills .skills__container .container__hard h3 {
     font-size: 1.5rem;
   }
+  .main__skills .skills__container .container__soft {
+    width: 100%;
+  }
   .main__skills .skills__container .container__soft h3 {
     font-size: 1.5rem;
+  }
+  .main__skills .skills__container .container__lang {
+    width: 100%;
   }
   .main__skills .skills__container .container__lang h3 {
     font-size: 1.5rem;
