@@ -418,9 +418,8 @@ header .page-progress .progress-content {
   text-shadow: 2px 2px 0 #6462b4, 2px -2px 0 #6462b4, -2px 2px 0 #6462b4, -2px -2px 0 #6462b4, 2px 0px 0 #6462b4, 0px 2px 0 #6462b4, -2px 0px 0 #6462b4, 0px -2px 0 #6462b4;
 }
 .main__banner .banner__text a {
-  animation: bounce 1s infinite;
-  background-color: #4767be13;
-  color: #6462b4;
+  background-color: #6462b4;
+  color: #ffffff;
   display: block;
   font-family: "roboto";
   font-size: 1.2rem;
@@ -433,7 +432,7 @@ header .page-progress .progress-content {
   z-index: 100;
 }
 .main__banner .banner__text a:hover {
-  background-color: #6462b4;
+  background-color: #4b49b6;
   color: #ffffff;
 }
 .main__banner .banner__image-container {

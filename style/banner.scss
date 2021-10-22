@@ -26,9 +26,8 @@
         -2px 0px 0 $secondaryColor, 0px -2px 0 $secondaryColor;
     }
     a {
-      animation: bounce 1s infinite;
-      background-color: $primaryColor;
-      color: $secondaryColor;
+      background-color: $secondaryColor;
+      color: $defaultColor;
       display: block;
       font-family: "roboto";
       font-size: 1.2rem;
@@ -40,7 +39,7 @@
       transition: 1s;
       z-index: 100;
       &:hover {
-        background-color: $secondaryColor;
+        background-color: #4b49b6;
         color: $defaultColor;
       }
     }
