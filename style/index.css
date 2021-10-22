@@ -1003,10 +1003,8 @@ header .page-progress .progress-content {
   width: 100%;
 }
 .main__realisations .realisations__content .content__card {
-  border-radius: 4px;
-  height: 200px;
-  margin: 5px;
-  overflow: hidden;
+  border: solid 1px #6462b4;
+  margin: 20px;
   transition: 1s;
   width: 300px;
 }
@@ -1017,16 +1015,13 @@ header .page-progress .progress-content {
 }
 .main__realisations .realisations__content .content__card .card__image-container img {
   height: 200px;
-  width: 350px;
+  width: 300px;
 }
 .main__realisations .realisations__content .content__card .card__description {
   background-color: #ffffff;
   color: #6462b4;
   font-family: "roboto";
-  opacity: 0;
   padding: 10px;
-  position: relative;
-  visibility: hidden;
 }
 .main__realisations .realisations__content .content__card .card__description p {
   text-align: center;
@@ -1037,15 +1032,6 @@ header .page-progress .progress-content {
   text-align: center;
   width: 100%;
 }
-.main__realisations .realisations__content .content__card:hover {
-  box-shadow: 0 0 4px #6462b4;
-  cursor: pointer;
-  height: 420px;
-}
-.main__realisations .realisations__content .content__card:hover .card__description {
-  opacity: 1;
-  visibility: visible;
-}
 .main__realisations .realisations__buttons {
   align-items: center;
   display: flex;
@@ -1055,18 +1041,14 @@ header .page-progress .progress-content {
   width: 100%;
 }
 .main__realisations .realisations__buttons button {
-  background-color: #4767be13;
+  background-color: #4b49b6;
   border: none;
-  color: #6462b4;
+  color: #ffffff;
+  cursor: pointer;
   font-size: 1.2rem;
   padding: 15px;
   transition: 1s;
   width: 150px;
-}
-.main__realisations .realisations__buttons button:hover {
-  background-color: #6462b4;
-  color: #ffffff;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 978px) {
