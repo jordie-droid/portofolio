@@ -69,7 +69,7 @@
     border-radius: 5px;
     box-shadow: 0 0 4px $secondaryColor;
     padding: 20px;
-    width: 40%;
+    width: 70%;
     .form__group-field {
       width: 100%;
       label {
@@ -117,19 +117,15 @@
     .form__button {
       width: 100%;
       button {
-        background-color: $primaryColor;
+        background-color: #4b49b6;
         border: none;
-        color: $secondaryColor;
+        color: $defaultColor;
+        cursor: pointer;
         font-family: "roboto";
         font-size: 1.05rem;
         padding: 20px;
         transition: 1s;
         width: 100%;
-        &:hover {
-          background-color: $secondaryColor;
-          color: $defaultColor;
-          cursor: pointer;
-        }
         &:focus {
           outline: none;
         }

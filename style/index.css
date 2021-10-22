@@ -1056,7 +1056,6 @@ header .page-progress .progress-content {
     font-size: 2rem !important;
   }
   .main__realisations .realisations__content .content__card {
-    height: 380px;
     width: 230px;
   }
 }
@@ -1089,7 +1088,7 @@ header .page-progress .progress-content {
   border-radius: 5px;
   box-shadow: 0 0 4px #6462b4;
   padding: 20px;
-  width: 40%;
+  width: 70%;
 }
 .main__contact .contact__form .form__group-field {
   width: 100%;
@@ -1139,19 +1138,15 @@ header .page-progress .progress-content {
   width: 100%;
 }
 .main__contact .contact__form .form__button button {
-  background-color: #4767be13;
+  background-color: #4b49b6;
   border: none;
-  color: #6462b4;
+  color: #ffffff;
+  cursor: pointer;
   font-family: "roboto";
   font-size: 1.05rem;
   padding: 20px;
   transition: 1s;
   width: 100%;
-}
-.main__contact .contact__form .form__button button:hover {
-  background-color: #6462b4;
-  color: #ffffff;
-  cursor: pointer;
 }
 .main__contact .contact__form .form__button button:focus {
   outline: none;
