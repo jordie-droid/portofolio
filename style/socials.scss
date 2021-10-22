@@ -7,7 +7,7 @@
   position: relative;
   .media {
     align-items: center;
-    background-color: $defaultColor;
+    background-color: $secondaryColor;
     clip-path: polygon(
       92.32051% 40%,
       93.79385% 43.1596%,
@@ -60,7 +60,7 @@
     width: 80px;
     .image-continer {
       align-items: center;
-      background-color: $primaryColor;
+      background-color: $defaultColor;
       clip-path: polygon(
         92.32051% 40%,
         93.79385% 43.1596%,
@@ -116,10 +116,7 @@
       }
     }
     &:hover {
-      background-color: $secondaryColor;
-      .image-continer {
-        background-color: $defaultColor;
-      }
+      transform: translateY(-10px);
     }
   }
 }
