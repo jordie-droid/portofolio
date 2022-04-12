@@ -1,2 +1,7 @@
 https://jordielutundula.vercel.app/
 https://jordielutundula.vercel.app/cv/CV_Jordie_LUTUNDULA.pdf
+https://jordielutundula.vercel.app/#about
+https://jordielutundula.vercel.app/#services
+https://jordielutundula.vercel.app/#skills
+https://jordielutundula.vercel.app/#realisations
+https://jordielutundula.vercel.app/#contact
