@@ -270,11 +270,11 @@ a {
   }
 }
 .linear-gradient {
-  background: linear-gradient(to bottom, #ffffff, #4767be13);
+  background: linear-gradient(to bottom, #ffffff, rgba(71, 103, 190, 0.0745098039));
 }
 
 .clip-linear-gradient {
-  background: linear-gradient(to bottom, #ffffff, #4767be13);
+  background: linear-gradient(to bottom, #ffffff, rgba(71, 103, 190, 0.0745098039));
 }
 
 header {
@@ -395,6 +395,7 @@ header .page-progress .progress-content {
   justify-content: center;
   margin-top: 85px;
   padding: 70px 0;
+  position: relative;
   width: 100%;
 }
 .main__banner .banner__text {
@@ -416,6 +417,7 @@ header .page-progress .progress-content {
 }
 .main__banner .banner__text a {
   background-color: #6462b4;
+  border-radius: 2em;
   color: #ffffff;
   display: block;
   font-family: "roboto";
@@ -441,14 +443,36 @@ header .page-progress .progress-content {
   justify-content: center;
   min-height: 300px;
   min-width: 300px;
+  position: relative;
+}
+.main__banner .banner__image-container::before {
+  background-color: rgba(0, 0, 0, 0.4862745098);
+  content: "";
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  height: 30px;
+  left: 70px;
+  position: absolute;
+  top: 60px;
+  width: 30px;
+  z-index: 10;
+}
+.main__banner .banner__image-container::after {
+  background-color: rgba(0, 0, 0, 0.4862745098);
+  content: "";
+  clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  height: 30px;
+  right: 70px;
+  position: absolute;
+  bottom: 60px;
+  width: 30px;
+  z-index: 10;
 }
 .main__banner .banner__image-container .image-container__content {
   background-color: #ffffff;
   border-radius: 20px;
-  height: 280px;
-  overflow: hidden;
-  width: 280px;
   clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  height: 280px;
+  width: 280px;
 }
 .main__banner .banner__image-container .image-container__content img {
   margin: 0 0 0 -70px;
@@ -506,7 +530,7 @@ header .page-progress .progress-content {
 }
 .main__about {
   align-items: center;
-  background-color: #4767be13;
+  background-color: rgba(71, 103, 190, 0.0745098039);
   display: flex;
   flex-direction: column;
   padding: 80px 0;
@@ -647,6 +671,7 @@ header .page-progress .progress-content {
 }
 .main__services {
   align-items: center;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 50px 0;
@@ -792,7 +817,7 @@ header .page-progress .progress-content {
 }
 .main__skills {
   align-items: center;
-  background-color: #4767be13;
+  background-color: rgba(71, 103, 190, 0.0745098039);
   display: flex;
   flex-direction: column;
   padding: 95px 0;
@@ -1003,8 +1028,9 @@ header .page-progress .progress-content {
   width: 100%;
 }
 .main__realisations .realisations__content .content__card {
-  border: solid 1px #6462b4;
+  box-shadow: -4px 4px 4px #4b49b6;
   margin: 20px;
+  position: relative;
   transition: 1s;
   width: 300px;
 }
@@ -1034,7 +1060,7 @@ header .page-progress .progress-content {
 }
 .main__realisations .realisations__buttons {
   align-items: center;
-  display: flex;
+  display: none;
   justify-content: center;
   margin: 70px;
   padding: 20px;
@@ -1043,6 +1069,7 @@ header .page-progress .progress-content {
 .main__realisations .realisations__buttons button {
   background-color: #4b49b6;
   border: none;
+  border-radius: 2em;
   color: #ffffff;
   cursor: pointer;
   font-size: 1.2rem;
@@ -1061,7 +1088,7 @@ header .page-progress .progress-content {
 }
 .main__contact {
   align-items: center;
-  background-color: #4767be13;
+  background-color: rgba(71, 103, 190, 0.0745098039);
   display: flex;
   flex-direction: column;
   padding: 90px 0;
@@ -1099,7 +1126,7 @@ header .page-progress .progress-content {
 }
 .main__contact .contact__form .form__group-field input {
   border: none;
-  border: solid 1px #4767be13;
+  border: solid 1px rgba(71, 103, 190, 0.0745098039);
   margin: 10px 0;
   padding: 15px 10px;
   transition: 1s;
@@ -1121,7 +1148,7 @@ header .page-progress .progress-content {
 }
 .main__contact .contact__form .form__group-field-area textarea {
   border: none;
-  border: solid 1px #4767be13;
+  border: solid 1px rgba(71, 103, 190, 0.0745098039);
   margin: 10px 0;
   padding: 15px 10px;
   transition: 1s;
@@ -1138,8 +1165,9 @@ header .page-progress .progress-content {
   width: 100%;
 }
 .main__contact .contact__form .form__button button {
-  background-color: #4b49b6;
+  background-color: #6462b4;
   border: none;
+  border-radius: 2em;
   color: #ffffff;
   cursor: pointer;
   font-family: "roboto";
@@ -1147,6 +1175,9 @@ header .page-progress .progress-content {
   padding: 20px;
   transition: 1s;
   width: 100%;
+}
+.main__contact .contact__form .form__button button:hover {
+  background-color: #4b49b6;
 }
 .main__contact .contact__form .form__button button:focus {
   outline: none;
@@ -1198,7 +1229,7 @@ header .page-progress .progress-content {
 }
 .main__newsletter .newsletter__group-field input {
   border: none;
-  border: solid 1px #4767be13;
+  border: solid 1px rgba(71, 103, 190, 0.0745098039);
   margin: 10px 0;
   padding: 15px 10px;
   transition: 1s;
@@ -1212,7 +1243,7 @@ header .page-progress .progress-content {
   outline: none;
 }
 .main__newsletter .newsletter__group-field button {
-  background-color: #4767be13;
+  background-color: rgba(71, 103, 190, 0.0745098039);
   border: none;
   color: #6462b4;
   font-family: "roboto";

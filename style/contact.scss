@@ -117,8 +117,9 @@
     .form__button {
       width: 100%;
       button {
-        background-color: #4b49b6;
+        background-color: $secondaryColor;
         border: none;
+        border-radius: 2em;
         color: $defaultColor;
         cursor: pointer;
         font-family: "roboto";
@@ -126,6 +127,9 @@
         padding: 20px;
         transition: 1s;
         width: 100%;
+        &:hover{
+          background-color: #4b49b6;
+        }
         &:focus {
           outline: none;
         }
