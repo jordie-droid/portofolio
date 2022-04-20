@@ -9,7 +9,8 @@ header {
     background-color: $secondaryColor;
     display: flex;
     height: 85px;
-    justify-content: space-around;
+    padding: 0 30px;
+    justify-content: space-between;
     width: 100%;
     .header__logo {
       a {
