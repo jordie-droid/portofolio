@@ -68,7 +68,7 @@
     background-color: $defaultColor;
     border-radius: 5px;
     box-shadow: 0 0 4px $secondaryColor;
-    padding: 20px;
+    padding: 40px;
     width: 70%;
     .form__group-field {
       width: 100%;
@@ -79,8 +79,9 @@
       input {
         border: none;
         border: solid 1px $primaryColor;
+        border-radius: 60px;
         margin: 10px 0;
-        padding: 15px 10px;
+        padding: 15px 20px;
         transition: 1s;
         width: 100%;
         &:hover {
@@ -101,8 +102,9 @@
       textarea {
         border: none;
         border: solid 1px $primaryColor;
+        border-radius: 10px;
         margin: 10px 0;
-        padding: 15px 10px;
+        padding: 15px 20px;
         transition: 1s;
         width: 100%;
         &:hover {
@@ -124,7 +126,7 @@
         cursor: pointer;
         font-family: "roboto";
         font-size: 1.05rem;
-        padding: 20px;
+        padding: 15px;
         transition: 1s;
         width: 100%;
         &:hover{

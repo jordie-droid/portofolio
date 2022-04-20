@@ -172,8 +172,10 @@
           margin: 5px 0;
         }
         .content__lang {
-          background-color: black;
+          background-color: #00000071;
+          border-radius: 50px;
           height: 10px;
+          overflow: hidden;
           width: 100%;
         }
         .lang__fr {
